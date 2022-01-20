@@ -24,7 +24,11 @@ const PACKAGE_PATHS = {
 class RunAfterCompile {
     apply(compiler) {
         compiler.hooks.done.tap('Copy images', function () {
-            fse.copySync('./src/assets/images', './dist/assets/images');
+					try {
+						fse.copySync('./src/assets/images', './dist/assets/images');
+					} catch (err) {
+						console.error(err);
+					}
         });
     }
 }
