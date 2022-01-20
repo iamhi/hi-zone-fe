@@ -1,0 +1,10 @@
+.page-layout {
+  width: 100%;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  flex-direction: row;
+  overflow-y: auto;
+
+  background-color: $appCream;
+}

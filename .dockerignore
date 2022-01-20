@@ -1,0 +1,15 @@
+.git
+.cache
+
+node_modules
+**/node_modules
+
+build
+
+.build
+.dist
+
+# uploads
+*.md
+
+redis-data

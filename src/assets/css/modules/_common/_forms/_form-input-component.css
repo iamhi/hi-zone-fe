@@ -1,0 +1,22 @@
+.form-input-component {
+  &__label {
+    color: $appBlue;
+    display: grid;
+  }
+
+  &__input {
+    color: $appBlue;
+    border-color: $appBlue;
+    margin-top: 0.5em;
+  }
+}
+
+.form-checkbox-label-component {
+  grid-template-columns: auto 1fr;
+}
+
+.form-checkbox-input-component {
+  order:-1;
+  margin-right: 0.5em;
+  margin-top: 0;
+}

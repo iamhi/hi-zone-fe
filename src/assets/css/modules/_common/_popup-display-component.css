@@ -1,0 +1,24 @@
+.popup-display-component {
+  top: 0;
+
+  &__background {
+    display: grid;
+    place-items: center;
+
+    top: 0;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    z-index: 999;
+    padding: 1em;
+    border-radius: 0.5em;
+    position: absolute;
+    background: $appCream;
+    max-width: 90%;
+  }
+}

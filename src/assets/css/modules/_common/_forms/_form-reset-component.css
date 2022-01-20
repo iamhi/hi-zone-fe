@@ -1,0 +1,5 @@
+.form-reset-component {
+  color: $appBlue;
+  border-color: $appBlue;
+  width: max-content;
+}
