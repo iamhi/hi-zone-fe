@@ -1,0 +1,5 @@
+.application-component {
+	border: 1px solid $appLightPink;
+	padding: 1em;
+	border-radius: 0.8em;
+}

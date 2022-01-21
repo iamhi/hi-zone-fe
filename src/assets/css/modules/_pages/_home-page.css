@@ -1,0 +1,13 @@
+.home-page {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 70% 30%;
+
+  background-color: $appBlue;
+
+	&__container {
+	    width: 100%;
+	    display: flex;
+	    flex-direction: column;
+	}
+}
