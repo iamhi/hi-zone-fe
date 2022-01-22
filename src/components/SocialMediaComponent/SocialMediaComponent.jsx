@@ -1,9 +1,22 @@
 import React from 'react';
 
+import socialMediaContent from '@assets/content/social-media-content.json';
+
+import SocialMediaDisplayComponent from './SocialMediaDisplayComponent';
+
 const SocialMediaComponent = () => (
 	<div className="social-media-component">
-		<div>Social media link 1</div>
-		<div>Social media link 2</div>
+		{socialMediaContent.map(({
+			key,
+			className,
+			url,
+			label,
+		}) =>
+			<SocialMediaDisplayComponent
+				key={key}
+				className={className}
+				url={url}
+				label={label} />)}
 	</div>
 );
 

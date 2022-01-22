@@ -1,3 +1,17 @@
+$titleContentComponentOutlineColor: $appLightPink;
+
 .content-title-component {
-	font-size: 2em;
+	font-size: 2.20em;
+	font-weight: bold;
+
+	border-bottom: 1px solid $appLightPink;
+
+	padding-bottom: 0.25em;
+	margin-bottom: 0.25em;
+
+	text-shadow:
+		2px 0 1px $titleContentComponentOutlineColor,
+		-2px 0 1px $titleContentComponentOutlineColor,
+		0 2px 1px $titleContentComponentOutlineColor,
+		0 -2px 1px $titleContentComponentOutlineColor;
 }

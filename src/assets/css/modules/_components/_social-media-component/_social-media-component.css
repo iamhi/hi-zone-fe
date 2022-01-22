@@ -1,0 +1,12 @@
+.social-media-component {
+	/* border: 1px solid $appLightPink;
+	padding: 1em;
+	border-radius: 0.8em; */
+
+	padding: 1em;
+
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}

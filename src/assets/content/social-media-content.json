@@ -1,0 +1,26 @@
+[
+	{
+		"key": "social-media-link-1",
+		"className": "fab fa-facebook",
+		"url": "https://www.facebook.com",
+		"label": "guh..."
+	},
+	{
+		"key": "social-media-link-2",
+		"className": "fab fa-instagram",
+		"url": "https://www.instagram.com",
+		"label": "my username"
+	},
+	{
+		"key": "social-media-link-3",
+		"className": "fab fa-youtube",
+		"url": "https://www.youtube.com",
+		"label": "my channel name"
+	},
+	{
+		"key": "social-media-link-4",
+		"className": "fab fa-twitch",
+		"url": "https://www.twitch.tv",
+		"label": "my username"
+	}
+]

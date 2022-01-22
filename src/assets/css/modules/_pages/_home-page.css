@@ -11,5 +11,13 @@
 	    width: 100%;
 	    display: flex;
 	    flex-direction: column;
+
+			&--right {
+				padding-left: 1em;
+			}
+
+			&--left {
+				padding-right: 1em;
+			}
 	}
 }

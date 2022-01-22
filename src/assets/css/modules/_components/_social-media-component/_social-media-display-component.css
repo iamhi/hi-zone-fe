@@ -1,0 +1,22 @@
+.social-media-display-component {
+	display: flex;
+
+	&__link {
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__icon {
+		font-size: 2em;
+		color: $appLightYellow;
+		width: 100%;
+		margin: auto;
+	}
+
+	&__label {
+		padding: 1em;
+		color: $appLightGreen;
+	}
+}
