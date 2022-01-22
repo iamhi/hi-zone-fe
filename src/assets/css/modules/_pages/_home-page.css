@@ -1,8 +1,10 @@
 .home-page {
+	padding: 1em;
 	display: grid;
 	height: 100%;
 	grid-template-columns: 70% 30%;
 
+	color: $appLightYellow;
   background-color: $appBlue;
 
 	&__container {

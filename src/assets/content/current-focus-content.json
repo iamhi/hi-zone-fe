@@ -1,0 +1,17 @@
+[
+	{
+		"key": "element-1-title-current-focus",
+		"type": "title",
+		"content": "Current focus title"
+	},
+	{
+		"key": "element-2-subtitle-current-focus",
+		"type": "subtitle",
+		"content": "Portfolio/Playground app"
+	},
+	{
+		"key": "element-3-subtitle-current-focus",
+		"type": "text",
+		"content": "Currently focusing hard on not losing money following /r/wsb but instead to focus on creating a portfolio. With some playground features"
+	}
+]

@@ -1,10 +1,11 @@
 import React from 'react';
 
+import ContentRegistryComponent from '@components/ContentRegistryComponent';
+import aboutContent from '@assets/content/about-content.json';
+
 const AboutComponent = () => (
 	<div className="about-component">
-		This is general information about me
-		Coding languages
-		Hobies
+		<ContentRegistryComponent contentData={aboutContent} />
 	</div>
 );
 

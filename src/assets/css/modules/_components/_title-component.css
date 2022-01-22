@@ -1,5 +1,34 @@
 .title-component {
-	border: 1px solid $appLightPink;
-	padding: 1em;
-	border-radius: 0.8em;
+	margin: 1em 0em 1em 0em;
+	display: flex;
+	flex-direction: column;
+
+	&__intro-label{
+		display: flex;
+		padding: 0em 1em 0em 1em;
+		font-size: 1.25em;
+		font-style:italic;
+		justify-content: center;
+		color: $appLightGreen;
+	}
+
+	&__title {
+		display: flex;
+		padding: 0.5em;
+		font-size: 4em;
+		font-weight: bold;
+		width: 100%;
+		justify-content: center;
+
+		text-shadow: 4px 4px 0 $appLightPink, -4px -4px 0 $appLightGreen;
+	}
+
+	&__logo {
+		display: flex;
+		padding: 0em 1em 0em 1em;
+		font-size: 2em;
+		justify-content: center;
+
+				text-shadow: 3px 4px 0 $appLightPink, -2px -4px 0 $appLightGreen;
+	}
 }

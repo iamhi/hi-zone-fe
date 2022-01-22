@@ -6,6 +6,7 @@ import SpotifyComponent from '@components/SpotifyComponent';
 import AboutComponent from '@components/AboutComponent';
 import CurrentFocusComponent from '@components/CurrentFocusComponent';
 import ApplicationComponent from '@components/ApplicationComponent';
+import SocialMediaComponent from '@components/SocialMediaComponent';
 
 const HomePageComponent = () => (
 	<div className="basic-page">
@@ -24,6 +25,8 @@ const HomePageComponent = () => (
 				<MoodComponent />
 
 				<SpotifyComponent />
+
+				<SocialMediaComponent />
 			</div>
 		</div>
 	</div>
