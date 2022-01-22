@@ -1,18 +1,22 @@
 .social-media-display-component {
 	display: flex;
+	flex-basis: 25%;
 
 	&__link {
 		text-decoration: none;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
+		width: 100%;
+		text-align: center;
 	}
 
 	&__icon {
 		font-size: 2em;
 		color: $appLightYellow;
 		width: 100%;
-		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	&__label {
