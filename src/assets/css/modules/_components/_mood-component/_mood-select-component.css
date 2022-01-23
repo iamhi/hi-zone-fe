@@ -1,0 +1,13 @@
+.mood-select-component {
+	display: flex;
+	flex-direction: column;
+
+	position: absolute;
+
+	padding: 0.25em 1em 0.25em 1em;
+
+	background-color: $appBlue;
+	border: 1px solid $appLightPink;
+	border-bottom-left-radius: 0.8em;
+	border-bottom-right-radius: 0.8em;
+}

@@ -1,0 +1,14 @@
+.current-mood-component {
+	width: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1em;
+
+	&__label {
+		color: $appLightYellow;
+		font-size: 1.25em;
+		font-weight: bold;
+		text-shadow: 2px 2px 0 $appLightPink, -2px -2px 0 $appLightGreen;
+	}
+}

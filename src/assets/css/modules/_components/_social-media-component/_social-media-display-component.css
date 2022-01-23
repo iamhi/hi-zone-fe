@@ -1,6 +1,7 @@
 .social-media-display-component {
 	display: flex;
 	flex-basis: 25%;
+	flex-grow: 1;
 
 	&__link {
 		text-decoration: none;
