@@ -12,6 +12,7 @@ const PACKAGE_PATHS = {
     '@src': path.resolve(__dirname, 'src'),
     '@assets': path.resolve(__dirname, 'src/assets'),
     '@utility': path.resolve(__dirname, 'src/utility'),
+    '@theme': path.resolve(__dirname, 'src/theme'),
     '@components': path.resolve(__dirname, 'src/components'),
     '@common-components': path.resolve(__dirname, 'src/components/common'),
     '@layout-components': path.resolve(__dirname, 'src/components/layout'),

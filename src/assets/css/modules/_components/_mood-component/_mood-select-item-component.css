@@ -4,11 +4,11 @@
 	padding: 0.5em;
 	margin-top: 0.25em;
 	margin-bottom: 0.25em;
-	color: $appLightYellow;
+	color: var(--primary-color-2);
 	border-radius: 0.2em;
 
 	&:hover {
-		color: $appBlue;
-		background: $appLightGreen;
+		color: var(--background-color);
+		background: var(--primary-color-1);
 	}
 }

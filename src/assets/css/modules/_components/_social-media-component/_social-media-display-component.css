@@ -14,7 +14,7 @@
 
 	&__icon {
 		font-size: 2em;
-		color: $appLightYellow;
+		color: var(--primary-color-2);
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -22,6 +22,6 @@
 
 	&__label {
 		padding: 1em;
-		color: $appLightGreen;
+		color: var(--primary-color-1);
 	}
 }

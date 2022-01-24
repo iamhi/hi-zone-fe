@@ -6,9 +6,9 @@
 	margin-top: 1em;
 
 	&__label {
-		color: $appLightYellow;
+		color: var(--primary-color-2);
 		font-size: 1.25em;
 		font-weight: bold;
-		text-shadow: 2px 2px 0 $appLightPink, -2px -2px 0 $appLightGreen;
+		text-shadow: 2px 2px 0 var(--primary-color-3), -2px -2px 0 var(--primary-color-1);
 	}
 }

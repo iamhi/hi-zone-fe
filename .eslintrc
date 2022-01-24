@@ -104,7 +104,7 @@
     "no-restricted-exports": 0,
     'array-element-newline': ["error", {
       'multiline': true,
-      'minItems': 4
+      'minItems': 3
     }],
     'prettier/prettier': 0,
     'no-tabs': 0

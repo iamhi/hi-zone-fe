@@ -1,6 +1,6 @@
 .spotify-component {
 	&__spotify-iframe {
-		border: 1px solid $appLightPink;
+		border: 1px solid var(--primary-color-3);
 		border-radius: 0.8em;
 	}
 }

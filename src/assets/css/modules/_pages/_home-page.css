@@ -4,8 +4,8 @@
 	height: 100%;
 	grid-template-columns: 70% 30%;
 
-	color: $appLightYellow;
-  background-color: $appBlue;
+	color: var(--primary-color-2);
+  background-color: var(--background-color);
 
 	&__container {
 	    width: 100%;

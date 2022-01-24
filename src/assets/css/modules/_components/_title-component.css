@@ -9,7 +9,7 @@
 		font-size: 1.25em;
 		font-style:italic;
 		justify-content: center;
-		color: $appLightGreen;
+		color: var(--primary-color-1);
 	}
 
 	&__title {
@@ -20,7 +20,7 @@
 		width: 100%;
 		justify-content: center;
 
-		text-shadow: 4px 4px 0 $appLightPink, -4px -4px 0 $appLightGreen;
+		text-shadow: 4px 4px 0 var(--primary-color-3), -4px -4px 0 var(--primary-color-1);
 	}
 
 	&__logo {
@@ -29,6 +29,6 @@
 		font-size: 2em;
 		justify-content: center;
 
-				text-shadow: 3px 4px 0 $appLightPink, -2px -4px 0 $appLightGreen;
+		text-shadow: 3px 4px 0 var(--primary-color-3), -2px -4px 0 var(--primary-color-1);
 	}
 }

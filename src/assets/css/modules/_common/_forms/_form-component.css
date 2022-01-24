@@ -10,8 +10,8 @@
     padding: 0.5em;
 
     &--error-message {
-      border-color: $appLightPink;
-      color: $appLightPink;
+      border-color: var(--primary-color-3);
+      color: var(--primary-color-3);
     }
   }
 }
