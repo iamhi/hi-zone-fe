@@ -3,16 +3,21 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const DEFAULT_MOOD = 'Chill';
 const ADDITIONAL_DEFAULT_MOODS = ['Hacker', 'Aggressive'];
+const LOCAL_STORAGE_MOOD_ITEM = 'hi-zone-state-mood';
+
+const persistMood = (mood) => localStorage.setItem(LOCAL_STORAGE_MOOD_ITEM, mood);
 
 const userPreferenceSlice = createSlice({
 	name: 'userPreference',
 	initialState: {
-		mood: DEFAULT_MOOD,
+		mood: localStorage.getItem(LOCAL_STORAGE_MOOD_ITEM) || DEFAULT_MOOD,
 		allMoods: [DEFAULT_MOOD, ...ADDITIONAL_DEFAULT_MOODS],
 	},
 	reducers: {
 		setMood(state, action) {
 			state.mood = action.payload;
+
+			persistMood(state.mood);
 		},
 		addMood(state, action) {
 			state.allMoods.push(action.payload);
@@ -20,6 +25,8 @@ const userPreferenceSlice = createSlice({
 		addAndSetMood(state, action) {
 			state.allMoods.push(action.payload);
 			state.mood = action.payload;
+
+			persistMood(state.mood);
 		},
 		removeMood(state, action) {
 			state.allMoods = state.allMoods.filter((mood) => mood !== action.payload);
@@ -30,6 +37,8 @@ const userPreferenceSlice = createSlice({
 
 			if (state.mood === action.payload) {
 				state.mood = DEFAULT_MOOD;
+
+				persistMood(state.mood);
 			}
 		},
 	},

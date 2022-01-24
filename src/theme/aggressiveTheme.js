@@ -3,19 +3,19 @@ export default {
 	properties: [
 		{
 			key: '--primary-color-1',
-			value: '#3fc1c9',
+			value: '#2ad574',
 		},
 		{
 			key: '--primary-color-2',
-			value: '#fce38a',
+			value: '#e8e8e8',
 		},
 		{
 			key: '--primary-color-3',
-			value: '#fc5185',
+			value: '#fd8440',
 		},
 		{
 			key: '--background-color',
-			value: '#364f6b',
+			value: '#232120',
 		},
 	],
 };
