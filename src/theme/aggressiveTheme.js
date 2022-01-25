@@ -7,11 +7,11 @@ export default {
 		},
 		{
 			key: '--primary-color-2',
-			value: '#e8e8e8',
+			value: '#fd8440',
 		},
 		{
 			key: '--primary-color-3',
-			value: '#fd8440',
+			value: '#fce38a',
 		},
 		{
 			key: '--background-color',
