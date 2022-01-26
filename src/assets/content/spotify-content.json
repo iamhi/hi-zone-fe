@@ -1,0 +1,13 @@
+{
+	"moods": {
+		"Chill": {
+			"url": "https://open.spotify.com/embed/playlist/2V3LZ7Pjk6HNhlikDn4sl2?utm_source=generator"
+		},
+		"Aggressive": {
+			"url": "https://open.spotify.com/embed/playlist/3gmpLUPjxqgEAyeT793OpE?utm_source=generator&theme=0"
+		},
+		"Hacker": {
+			"url": "https://open.spotify.com/embed/playlist/3ZcUYitIClqAJY0YHwcHo7?utm_source=generator&theme=0"
+		}
+	}
+}
