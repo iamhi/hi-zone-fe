@@ -16,6 +16,9 @@ $appCream: #ececeb;
 	--primary-color-2: $appLightYellow;
 	--primary-color-3: $appLightPink;
 
+	--secondary-color-1: $appLightGreen;
+	--secondary-color-2: $appLightPink;
+
 	--white-color: $appCream;
 	--background-color: $appBlue;
 }

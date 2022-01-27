@@ -12,7 +12,11 @@ const MoodSelectItemComponent = ({
 	const onClickAction = useCallback(() => {
 		dispatch(setMood(mood));
 		hideSelect();
-	}, [mood]);
+	}, [
+		mood,
+		dispatch,
+		hideSelect,
+	]);
 
 	return (
 		<button type="button" className="no-button-css mood-select-item-component" onClick={onClickAction}>

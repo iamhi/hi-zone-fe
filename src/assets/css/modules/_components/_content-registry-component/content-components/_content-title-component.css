@@ -8,8 +8,8 @@
 	margin-bottom: 0.25em;
 
 	text-shadow:
-		2px 0 1px var(--primary-color-3),
-		-2px 0 1px var(--primary-color-3),
-		0 2px 1px var(--primary-color-3),
-		0 -2px 1px var(--primary-color-3);
+		2px 0 1px var(--secondary-color-2),
+		-2px 0 1px var(--secondary-color-2),
+		0 2px 1px var(--secondary-color-2),
+		0 -2px 1px var(--secondary-color-2);
 }

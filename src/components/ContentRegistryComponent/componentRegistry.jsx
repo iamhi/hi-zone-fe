@@ -26,7 +26,7 @@ const getComponent = ({
 		return <ContentSubtitleComponent key={key} {...componentProps}>{content}</ContentSubtitleComponent>;
 
 	default:
-		return <ContentTextComponent key={key} {...componentProps }>{content}</ContentTextComponent>;
+		return <ContentTextComponent key={key} {...componentProps}>{content}</ContentTextComponent>;
 	}
 };
 

@@ -7,6 +7,11 @@
 	color: var(--primary-color-2);
   background-color: var(--background-color);
 
+	transition: color 0.5s ease-in-out,
+							border-color 0.5s ease-in-out,
+							background-color 0.5s ease-in-out,
+							text-shadow 0.5s ease-in-out;
+
 	&__container {
 	    width: 100%;
 	    display: flex;

@@ -11,12 +11,13 @@ const SocialMediaComponent = () => (
 			className,
 			url,
 			label,
-		}) =>
+		}) => (
 			<SocialMediaDisplayComponent
 				key={key}
 				className={className}
 				url={url}
-				label={label} />)}
+				label={label} />
+		))}
 	</div>
 );
 

@@ -17,5 +17,13 @@ export default {
 			key: '--background-color',
 			value: 'black',
 		},
+		{
+			key: '--secondary-color-1',
+			value: 'black',
+		},
+		{
+			key: '--secondary-color-2',
+			value: 'black',
+		},
 	],
 };

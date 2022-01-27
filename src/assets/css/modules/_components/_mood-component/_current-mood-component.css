@@ -9,6 +9,6 @@
 		color: var(--primary-color-2);
 		font-size: 1.25em;
 		font-weight: bold;
-		text-shadow: 2px 2px 0 var(--primary-color-3), -2px -2px 0 var(--primary-color-1);
+		text-shadow: 2px 2px 0 var(--secondary-color-2), -2px -2px 0 var(--secondary-color-1);
 	}
 }
