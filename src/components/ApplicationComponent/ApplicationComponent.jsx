@@ -1,8 +1,10 @@
 import React from 'react';
 
+const APPLICATION_URL = 'http://localhost:3001';
+
 const ApplicationComponent = () => (
 	<div className="application-component">
-		This component is a showcase of some application that is related to the mood
+		<iframe scrolling="no" className="application-component__application-frame" src={APPLICATION_URL} title="application" />
 	</div>
 );
 

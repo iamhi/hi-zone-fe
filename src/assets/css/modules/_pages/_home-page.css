@@ -11,6 +11,7 @@
 							border-color 0.5s ease-in-out,
 							background-color 0.5s ease-in-out,
 							text-shadow 0.5s ease-in-out;
+	overflow-y: auto;
 
 	&__container {
 	    width: 100%;
