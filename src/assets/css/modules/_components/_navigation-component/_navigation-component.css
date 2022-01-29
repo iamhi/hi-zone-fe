@@ -1,0 +1,6 @@
+.navigation-component {
+	border: 1px solid var(--primary-color-3);
+	padding: 1em;
+	border-radius: 0.8em;
+	margin-bottom: 1em;
+}

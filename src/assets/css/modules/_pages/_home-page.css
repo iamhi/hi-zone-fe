@@ -3,6 +3,7 @@
 	display: grid;
 	height: 100%;
 	grid-template-columns: 70% 30%;
+	overflow-y: auto;
 
 	color: var(--primary-color-2);
   background-color: var(--background-color);
@@ -11,7 +12,6 @@
 							border-color 0.5s ease-in-out,
 							background-color 0.5s ease-in-out,
 							text-shadow 0.5s ease-in-out;
-	overflow-y: auto;
 
 	&__container {
 	    width: 100%;

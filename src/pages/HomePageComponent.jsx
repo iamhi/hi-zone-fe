@@ -1,12 +1,16 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 import TitleComponent from '@components/TitleComponent';
+import NavigationComponent from '@components/NavigationComponent';
 import MoodComponent from '@components/MoodComponent';
 import SpotifyComponent from '@components/SpotifyComponent';
-import AboutComponent from '@components/AboutComponent';
-import CurrentFocusComponent from '@components/CurrentFocusComponent';
-import ApplicationComponent from '@components/ApplicationComponent';
 import SocialMediaComponent from '@components/SocialMediaComponent';
+import AboutRouteComponent from '@page-components/AboutRouteComponent';
+import ZoneRouteComponent from '@page-components/ZoneRouteComponent';
+
+const ABOUT_ROUTE = '/';
+const ZONE_ROUTE = '/zone';
 
 const HomePageComponent = () => (
 	<div className="basic-page">
@@ -14,11 +18,13 @@ const HomePageComponent = () => (
 			<div className="home-page__container home-page__container--left">
 				<TitleComponent />
 
-				<AboutComponent />
+				<NavigationComponent />
 
-				<CurrentFocusComponent />
+				<Routes>
+					<Route path={ABOUT_ROUTE} element={<AboutRouteComponent />} />
 
-				<ApplicationComponent />
+					<Route path={ZONE_ROUTE} element={<ZoneRouteComponent />} />
+				</Routes>
 			</div>
 
 			<div className="home-page__container home-page__container--right">
