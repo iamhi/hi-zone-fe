@@ -9,8 +9,8 @@ import SocialMediaComponent from '@components/SocialMediaComponent';
 import AboutRouteComponent from '@page-components/AboutRouteComponent';
 import ZoneRouteComponent from '@page-components/ZoneRouteComponent';
 
-const ABOUT_ROUTE = '/';
-const ZONE_ROUTE = '/zone';
+const ABOUT_ROUTE = '/about';
+const ZONE_ROUTE = '/';
 
 const HomePageComponent = () => (
 	<div className="basic-page">
