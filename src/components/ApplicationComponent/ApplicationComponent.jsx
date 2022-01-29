@@ -1,11 +1,22 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-const APPLICATION_URL = 'http://localhost:3001';
+import spotifyContent from '@assets/content/application-content.json';
+import { selectCurrentMood } from '@redux/slices/userPreferenceSlice';
 
-const ApplicationComponent = () => (
-	<div className="application-component">
-		<iframe scrolling="no" className="application-component__application-frame" src={APPLICATION_URL} title="application" />
-	</div>
-);
+const ApplicationComponent = () => {
+	const mood = useSelector(selectCurrentMood);
+	const { url: currentMoodUrl } = spotifyContent.moods[mood];
+
+	return (
+		<div className="application-component">
+			<iframe
+				scrolling="no"
+				className="application-component__application-frame"
+				src={currentMoodUrl}
+				title="application" />
+		</div>
+	);
+};
 
 export default ApplicationComponent;

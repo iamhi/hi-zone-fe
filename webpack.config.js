@@ -7,6 +7,9 @@ const TerserPlugin = require('terser-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const webpack = require('webpack');
 const fse = require('fs-extra');
+const fs = require('fs');
+const fetch = require('node-fetch');
+const externalContentConfig = require('./externalcontent.config.js');
 
 const PACKAGE_PATHS = {
     '@src': path.resolve(__dirname, 'src'),
@@ -23,15 +26,32 @@ const PACKAGE_PATHS = {
 };
 
 class RunAfterCompile {
-    apply(compiler) {
-        compiler.hooks.done.tap('Copy images', function () {
-					try {
-						fse.copySync('./src/assets/images', './dist/assets/images');
-					} catch (err) {
-						console.error(err);
-					}
-        });
-    }
+  apply(compiler) {
+    compiler.hooks.done.tap('Copy images', function () {
+			try {
+				fse.copySync('./src/assets/images', './dist/assets/images');
+			} catch (err) {
+				console.error(err);
+			}
+    });
+
+    compiler.hooks.done.tap('Fetch content', function () {
+			try {
+				const { source: srcUrl, destination: destUrl, files } = externalContentConfig;
+
+				fs.mkdirSync('./dist/assets/content', { recursive: true });
+
+				files.forEach(({ filename }) => {
+					fetch(srcUrl + filename)
+						.then((response) => response.text())
+						.then((textData) => fs.writeFileSync(destUrl + filename, textData))
+						.catch((err) => console.error(`Erorr while saving file: ${filename}. ${err.message}`));
+				});
+			} catch (err) {
+				console.error(err);
+			}
+    });
+  }
 }
 
 let cssConfig = {

@@ -1,0 +1,13 @@
+{
+	"moods": {
+		"Chill": {
+			"url": "http://localhost:3001"
+		},
+		"Aggressive": {
+			"url": "http://localhost:3001"
+		},
+		"Hacker": {
+			"url": "http://localhost:3001"
+		}
+	}
+}
