@@ -10,6 +10,7 @@ $appLightGreen: #3fc1c9;
 $appLightYellow: #fce38a;
 $appLightPink: #fc5185;
 $appCream: #ececeb;
+$transparentLightGreen: rgba(63, 193, 201, 0.3);
 
 :root {
 	--primary-color-1: $appLightGreen;
@@ -21,4 +22,5 @@ $appCream: #ececeb;
 
 	--white-color: $appCream;
 	--background-color: $appBlue;
+	--background-secondary-color: $transparentLightGreen;
 }

@@ -8,6 +8,7 @@ import SpotifyComponent from '@components/SpotifyComponent';
 import SocialMediaComponent from '@components/SocialMediaComponent';
 import AboutRouteComponent from '@page-components/AboutRouteComponent';
 import ZoneRouteComponent from '@page-components/ZoneRouteComponent';
+import FooterComponent from '@components/FooterComponent';
 
 const ABOUT_ROUTE = '/about';
 const ZONE_ROUTE = '/';
@@ -33,6 +34,10 @@ const HomePageComponent = () => (
 				<SpotifyComponent />
 
 				<SocialMediaComponent />
+			</div>
+
+			<div className="home-page__footer">
+				<FooterComponent />
 			</div>
 		</div>
 	</div>

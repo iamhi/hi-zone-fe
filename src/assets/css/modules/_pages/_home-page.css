@@ -1,7 +1,10 @@
 .home-page {
+	height: 100%;
 	padding: 1em;
 	display: grid;
-	height: 100%;
+	grid-template-areas:
+		"container-left container-right"
+		"footer footer";
 	grid-template-columns: 70% 30%;
 	overflow-y: auto;
 
@@ -19,11 +22,24 @@
 	    flex-direction: column;
 
 			&--right {
+			  grid-area: container-right;
 				padding-left: 1em;
 			}
 
 			&--left {
+			  grid-area: container-left;
 				padding-right: 1em;
 			}
+	}
+
+	&__footer {
+		grid-area: footer;
+		margin: -1em;
+		margin-top: 1em;
+		padding: 1em;
+		display: grid;
+		text-align: center;
+		height:	min-content;
+		background-color: var(--background-secondary-color);
 	}
 }

@@ -18,6 +18,10 @@ export default {
 			value: '#232120',
 		},
 		{
+			key: '--background-secondary-color',
+			value: 'rgba(61, 61, 61, 0.3)',
+		},
+		{
 			key: '--secondary-color-1',
 			value: '#232120',
 		},
