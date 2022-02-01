@@ -1,16 +1,20 @@
 {
 	"messages": [
 		{
-			"format": "This is playground/portfolio website."
+			"key": "footer-content-label-1",
+			"message": "This is playground/portfolio website."
 		},
 		{
-			"format": "It is an opensource project, full code can be found on:"
+			"key": "footer-content-label-2",
+			"message": "It is an opensource project, full code can be found on:"
 		},
 		{
-			"format": "https://github.com/iamhi/hi-zone-fe"
+			"key": "footer-content-label-3",
+			"message": "https://github.com/iamhi/hi-zone-fe"
 		},
 		{
-			"format": "Use my email: \"example@email.com\" for direct contact"
+			"key": "footer-content-label-4",
+			"message": "Use my email: \"example@email.com\" for direct contact"
 		}
 	]
 }
