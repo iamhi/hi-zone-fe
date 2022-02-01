@@ -9,6 +9,7 @@ import SocialMediaComponent from '@components/SocialMediaComponent';
 import AboutRouteComponent from '@page-components/AboutRouteComponent';
 import ZoneRouteComponent from '@page-components/ZoneRouteComponent';
 import FooterComponent from '@components/FooterComponent';
+import SupportingApplicationComponent from '@components/SupportingApplicationComponent';
 
 const ABOUT_ROUTE = '/about';
 const ZONE_ROUTE = '/';
@@ -32,6 +33,8 @@ const HomePageComponent = () => (
 				<MoodComponent />
 
 				<SpotifyComponent />
+
+				<SupportingApplicationComponent />
 
 				<SocialMediaComponent />
 			</div>

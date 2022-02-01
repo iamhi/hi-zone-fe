@@ -8,3 +8,5 @@
 @import "_content-registry-component";
 @import "_navigation-component";
 @import "_footer-component";
+@import "_supporting-application-component";
+@import "_note-application-component";
