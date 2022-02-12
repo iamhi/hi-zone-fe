@@ -14,6 +14,10 @@
 		},
 		{
 			"key": "footer-content-label-4",
+			"message": "Leave feedback on: http://localhost:8080/hi-zone-api/feedback"
+		},
+		{
+			"key": "footer-content-label-5",
 			"message": "Use my email: \"example@email.com\" for direct contact"
 		}
 	]
