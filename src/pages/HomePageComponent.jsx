@@ -10,6 +10,7 @@ import AboutRouteComponent from '@page-components/AboutRouteComponent';
 import ZoneRouteComponent from '@page-components/ZoneRouteComponent';
 import FooterComponent from '@components/FooterComponent';
 import SupportingApplicationComponent from '@components/SupportingApplicationComponent';
+import UserControlComponent from '@components/UserControlComponent';
 
 const ABOUT_ROUTE = '/about';
 const ZONE_ROUTE = '/';
@@ -42,6 +43,8 @@ const HomePageComponent = () => (
 			<div className="home-page__footer">
 				<FooterComponent />
 			</div>
+
+			<UserControlComponent />
 		</div>
 	</div>
 );

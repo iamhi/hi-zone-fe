@@ -2,19 +2,31 @@
 	"messages": [
 		{
 			"key": "footer-content-label-1",
-			"message": "This is playground/portfolio website."
+			"message": ""
 		},
 		{
 			"key": "footer-content-label-2",
-			"message": "It is an opensource project, full code can be found on:"
+			"message": "Find the full code on:"
 		},
 		{
 			"key": "footer-content-label-3",
 			"message": "https://github.com/iamhi/hi-zone-fe"
 		},
 		{
+			"key": "footer-content-label-3.1",
+			"message": ""
+		},
+		{
 			"key": "footer-content-label-4",
-			"message": "Leave feedback on: http://localhost:8080/hi-zone-api/feedback"
+			"message": "Leave feedback on:"
+		},
+		{
+			"key": "footer-content-label-4.1",
+			"message": "http://localhost:8080/hi-zone-api/feedback"
+		},
+		{
+			"key": "footer-content-label-4.2",
+			"message": ""
 		},
 		{
 			"key": "footer-content-label-5",

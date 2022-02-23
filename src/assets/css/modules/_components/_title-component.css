@@ -1,6 +1,7 @@
 .title-component {
 	display: flex;
 	flex-direction: column;
+	user-select: none;
 
 	&__intro-label{
 		display: flex;
@@ -13,7 +14,6 @@
 
 	&__title {
 		display: flex;
-		/* padding: 0.5em; */
 		padding-bottom: 0.10em;
 		font-size: 4em;
 		font-weight: bold;
