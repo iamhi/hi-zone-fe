@@ -31,4 +31,6 @@ export const selectRoles = (state) => state.userData.roles;
 
 export const selectEmail = (state) => state.userData.email;
 
+export const selectIsAdmin = (state) => state.userData.roles.includes('ADMIN');
+
 export default userDataSlice.reducer;

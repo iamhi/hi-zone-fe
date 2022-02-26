@@ -1,22 +1,28 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
+import { selectIsAdmin } from '@redux/slices/userDataSlice';
+import { ABOUT_ROUTE, ZONE_ROUTE } from '@page-components/constants';
 import NavigationItemComponent from './NavigationItemComponent';
-
-const ZONE_ROUTE = '/';
-const ABOUT_ROUTE = '/about';
 
 const NavigationComponent = () => {
 	const { pathname } = useLocation();
+	const isAdmin = useSelector(selectIsAdmin);
+
+	const adminRoutes = (
+		<NavigationItemComponent linkTo={ZONE_ROUTE} selected={pathname === ZONE_ROUTE}>
+			Zone
+		</NavigationItemComponent>
+	);
 
 	return (
 		<div className="navigation-component">
-			<NavigationItemComponent linkTo={ZONE_ROUTE} selected={pathname === ZONE_ROUTE}>
-				Zone
-			</NavigationItemComponent>
 			<NavigationItemComponent linkTo={ABOUT_ROUTE} selected={pathname === ABOUT_ROUTE}>
 				About
 			</NavigationItemComponent>
+
+			{isAdmin && adminRoutes}
 		</div>
 	);
 };
