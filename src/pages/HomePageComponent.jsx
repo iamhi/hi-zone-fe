@@ -8,6 +8,7 @@ import MoodComponent from '@components/MoodComponent';
 import SpotifyComponent from '@components/SpotifyComponent';
 import SocialMediaComponent from '@components/SocialMediaComponent';
 import AboutRouteComponent from '@page-components/AboutRouteComponent';
+import BlogRouteComponent from '@page-components/BlogRouteComponent';
 import ZoneRouteComponent from '@page-components/ZoneRouteComponent';
 import FooterComponent from '@components/FooterComponent';
 import SupportingApplicationComponent from '@components/SupportingApplicationComponent';
@@ -17,6 +18,7 @@ import { selectIsAdmin } from '@redux/slices/userDataSlice';
 import {
 	ABOUT_ROUTE,
 	ZONE_ROUTE,
+	BLOG_ROUTE,
 } from './constants';
 
 const HomePageComponent = () => {
@@ -36,6 +38,8 @@ const HomePageComponent = () => {
 
 					<Routes>
 						<Route path={ABOUT_ROUTE} element={<AboutRouteComponent />} />
+
+						<Route path={BLOG_ROUTE} element={<BlogRouteComponent />} />
 
 						{isAdmin && adminRoutes}
 					</Routes>

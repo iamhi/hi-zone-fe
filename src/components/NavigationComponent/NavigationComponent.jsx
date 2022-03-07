@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import { selectIsAdmin } from '@redux/slices/userDataSlice';
-import { ABOUT_ROUTE, ZONE_ROUTE } from '@page-components/constants';
+import { ABOUT_ROUTE, ZONE_ROUTE, BLOG_ROUTE } from '@page-components/constants';
 import NavigationItemComponent from './NavigationItemComponent';
 
 const NavigationComponent = () => {
@@ -20,6 +20,10 @@ const NavigationComponent = () => {
 		<div className="navigation-component">
 			<NavigationItemComponent linkTo={ABOUT_ROUTE} selected={pathname === ABOUT_ROUTE}>
 				About
+			</NavigationItemComponent>
+
+			<NavigationItemComponent linkTo={BLOG_ROUTE} selected={pathname === BLOG_ROUTE}>
+				Blog
 			</NavigationItemComponent>
 
 			{isAdmin && adminRoutes}
