@@ -8,9 +8,11 @@ import { selectIsAdmin } from '@redux/slices/userDataSlice';
 const BlogRouteComponent = () => {
 	const isAdmin = useSelector(selectIsAdmin);
 
+	console.warn({ isAdmin });
+
 	return (
 		<>
-			{isAdmin && <BlogCreateComponent />}
+			{/* isAdmin && */ <BlogCreateComponent />}
 
 			<BlogListComponent />
 		</>
