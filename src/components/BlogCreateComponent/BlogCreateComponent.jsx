@@ -1,11 +1,12 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 
 import FormComponent from '@common-components/FormComponent';
 import FormInputComponent from '@common-components/FormInputComponent';
 import FormSubmitComponent from '@common-components/FormSubmitComponent';
 
-import { fetchAllBlogRequest, createBlogRequest } from '@services/blog';
+import { createBlogRequest } from '@services/blog';
+import { addBlog } from '@redux/slices/blogSlice';
 
 const titleInput = 'title';
 const mediaInput = 'mediaUrl';
@@ -13,6 +14,8 @@ const mediaTypeInput = 'mediaType';
 const contentInput = 'content';
 
 const BlogCreateComponent = () => {
+	const dispatch = useDispatch();
+
 	const createBlogAction = async (event) => {
 		event.preventDefault();
 
@@ -20,20 +23,22 @@ const BlogCreateComponent = () => {
 		const requestData = Object.fromEntries(formData);
 
 		try {
-			console.warn({ requestData });
-			const response = await createBlogRequest(requestData);
-			console.warn({ response });
-			fetchAllBlogRequest();
+			const newBlog = await createBlogRequest(requestData);
+
+			dispatch(addBlog(newBlog));
 		} catch (err) {
 			console.warn({ err });
 		}
 	};
 
 	return (
-		<div>
+		<div className="blog-create-component">
+			<div className="blog-create-component__title">
+				New blog
+			</div>
 			<FormComponent onSubmit={createBlogAction}>
 				<FormInputComponent
-					label="Blog title"
+					label="Title"
 					require
 					name={titleInput} />
 

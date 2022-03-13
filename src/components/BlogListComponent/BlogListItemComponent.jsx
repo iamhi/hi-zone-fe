@@ -12,7 +12,7 @@ const BlogListItemComponent = ({
 		createdAt,
 	},
 }) => {
-	const hasMedia = mediaUrl !== undefined && mediaUrl !== null;
+	const hasMedia = mediaUrl !== undefined && mediaUrl !== null && mediaUrl !== '';
 	const MediaComponent = getMediaComponent(mediaType);
 
 	return (

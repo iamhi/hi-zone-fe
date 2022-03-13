@@ -12,7 +12,7 @@ const BlogRouteComponent = () => {
 
 	return (
 		<>
-			{/* isAdmin && */ <BlogCreateComponent />}
+			{isAdmin && <BlogCreateComponent />}
 
 			<BlogListComponent />
 		</>

@@ -1,5 +1,15 @@
 .form-submit-component {
-  color: $appBlue;
-  border-color: $appBlue;
+	cursor: pointer;
   width: max-content;
+	color: var(--primary-color-2);
+	border-color: var(--primary-color-3);
+	background-color: var(--background-color);
+
+	&:hover {
+		background-color: var(--background-secondary-color);
+	}
+
+	&:active {
+		color: var(--primary-color-1);
+	}
 }

@@ -1,13 +1,14 @@
 .form-input-component {
   &__label {
-    color: $appBlue;
+    color: var(--primary-color-1);
     display: grid;
   }
 
   &__input {
-    color: $appBlue;
-    border-color: $appBlue;
+		color: var(--primary-color-2);
+    border-color: var(--primary-color-3);
     margin-top: 0.5em;
+		background-color: var(--background-color);
   }
 }
 

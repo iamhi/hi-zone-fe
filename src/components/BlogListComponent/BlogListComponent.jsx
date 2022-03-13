@@ -1,19 +1,28 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useCallback } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { fetchAllBlogRequest } from '@services/blog';
+import {
+	addBlogs,
+	selectBlogList,
+	selectRequestPage,
+	selectRequestSize,
+} from '@redux/slices/blogSlice';
 
 import BlogListItemComponent from './BlogListItemComponent';
+import BlogListLoadMoreComponent from './BlogListLoadMoreComponent';
 
 const BlogListComponent = () => {
-	const [blogs, setBlogs] = useState([]);
+	const dispatch = useDispatch();
+	const blogs = useSelector(selectBlogList);
+	const requestPage = useSelector(selectRequestPage);
+	const requestSize = useSelector(selectRequestSize);
 
 	const fetchAllBlog = useCallback(async () => {
-		const blogsResponse = await fetchAllBlogRequest();
+		const blogsResponse = await fetchAllBlogRequest(requestPage, requestSize);
 
-		// Do some error checking here maybe?
-
-		setBlogs(blogsResponse);
-	}, [fetchAllBlogRequest]);
+		dispatch(addBlogs(blogsResponse));
+	}, [requestSize, requestPage]);
 
 	useEffect(() => {
 		fetchAllBlog();
@@ -24,8 +33,10 @@ const BlogListComponent = () => {
 	));
 
 	return (
-		<div>
+		<div className="blog-list-component">
 			{blogComponents}
+
+			<BlogListLoadMoreComponent />
 		</div>
 	);
 };

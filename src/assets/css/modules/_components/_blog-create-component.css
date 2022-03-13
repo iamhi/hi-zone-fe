@@ -1,0 +1,13 @@
+.blog-create-component {
+	border: 1px solid var(--primary-color-3);
+	padding: 1em;
+	border-radius: 0.8em;
+	margin-bottom: 1em;
+
+	&__title {
+		font-size: 1.2em;
+		border-bottom: 1px solid var(--primary-color-3);
+		margin-bottom: 1em;
+		padding-bottom: 0.5em;
+	}
+}

@@ -1,0 +1,10 @@
+.blog-list-load-more-component {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 1.5em;
+	font-size: 1.2em;
+	color: var(--primary-color-1);
+	background-color: var(--background-secondary-color);
+}
