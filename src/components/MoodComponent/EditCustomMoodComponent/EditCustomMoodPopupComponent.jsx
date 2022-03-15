@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import PopupDisplayComponent from '@common-components/PopupDisplayComponent';
 import FormComponent from '@common-components/FormComponent';
-import FormInputComponent from '@common-components/FormInputComponent';
+import ManagedFormInputComponent from '@common-components/ManagedFormInputComponent';
 import FormSubmitComponent from '@common-components/FormSubmitComponent';
 
 const primaryColor1 = '--primary-color-1';
@@ -16,44 +16,56 @@ const secondaryColor2 = '--secondary-color-2';
 
 const EditCustomMoodPopupComponent = ({
 	toggleAction,
+	themeData,
 }) => {
 	const saveMoodAction = (event) => {
-		const formData = new FormData(event.target);
-		const newThemeData = Object.fromEntries(formData);
+		if (event) {
+			const formData = new FormData(event.target);
+			const newThemeData = Object.fromEntries(formData);
 
-		toggleAction(newThemeData);
+			toggleAction(newThemeData);
+		}
+
+		toggleAction();
 	};
 
 	return (
-		<PopupDisplayComponent backgroundClick={toggleAction}>
+		<PopupDisplayComponent backgroundClick={() => saveMoodAction()}>
 			<FormComponent onSubmit={saveMoodAction}>
-				<FormInputComponent
+				<ManagedFormInputComponent
 					label="Primary color 1"
 					require
+					value={themeData[primaryColor1]}
 					name={primaryColor1} />
 
-				<FormInputComponent
+				<ManagedFormInputComponent
 					label="Primary color 2"
+					value={themeData[primaryColor2]}
 					name={primaryColor2} />
 
-				<FormInputComponent
+				<ManagedFormInputComponent
 					label="Primary color 3"
+					value={themeData[primaryColor3]}
 					name={primaryColor3} />
 
-				<FormInputComponent
+				<ManagedFormInputComponent
 					label="Background color"
+					value={themeData[backgroundColor]}
 					name={backgroundColor} />
 
-				<FormInputComponent
+				<ManagedFormInputComponent
 					label="Background secondary color"
+					value={themeData[backgroundSecondayColor]}
 					name={backgroundSecondayColor} />
 
-				<FormInputComponent
+				<ManagedFormInputComponent
 					label="Secondary color 1"
+					value={themeData[secondaryColor1]}
 					name={secondaryColor1} />
 
-				<FormInputComponent
+				<ManagedFormInputComponent
 					label="Secondary color 2"
+					value={themeData[secondaryColor2]}
 					name={secondaryColor2} />
 				<FormSubmitComponent>
 					Save
@@ -65,6 +77,10 @@ const EditCustomMoodPopupComponent = ({
 
 EditCustomMoodPopupComponent.propTypes = {
 	toggleAction: PropTypes.func,
+	themeData: PropTypes.shape({
+		key: PropTypes.string,
+		value: PropTypes.string,
+	}),
 };
 
 export default EditCustomMoodPopupComponent;

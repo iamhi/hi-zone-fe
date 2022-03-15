@@ -11,12 +11,15 @@ const EditCustomMoodComponent = () => {
 	const [isEditting, setEditting] = useState(false);
 
 	const saveTheme = (themeData) => {
+		console.warn({ themeData });
 		setEditting(false);
 
 		if (themeData) {
 			themeRegistry.setCustomTheme(themeData);
 
 			dispatch(setMood(themeRegistry.CUSTOM_THEME_NAME));
+
+			themeRegistry.selectTheme(themeRegistry.CUSTOM_THEME_NAME);
 		}
 	};
 
@@ -27,7 +30,7 @@ const EditCustomMoodComponent = () => {
 					Create/Edit custom theme
 				</div>
 			</button>
-			{isEditting && <EditCustomMoodPopupComponent toggleAction={saveTheme} />}
+			{isEditting && <EditCustomMoodPopupComponent toggleAction={saveTheme} themeData={themeRegistry.getCustomThemeDataAsObject()} />}
 		</div>
 	);
 };
