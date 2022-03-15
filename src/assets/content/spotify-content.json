@@ -8,6 +8,12 @@
 		},
 		"Hacker": {
 			"url": "https://open.spotify.com/embed/playlist/3ZcUYitIClqAJY0YHwcHo7?utm_source=generator&theme=0"
+		},
+		"Your theme": {
+			"url": "https://open.spotify.com/embed/playlist/2V3LZ7Pjk6HNhlikDn4sl2?utm_source=generator"
+		},
+		"undefined": {
+			"url": "https://open.spotify.com/embed/playlist/2V3LZ7Pjk6HNhlikDn4sl2?utm_source=generator"
 		}
 	}
 }

@@ -6,6 +6,7 @@ import { selectCurrentMood } from '@redux/slices/userPreferenceSlice';
 
 const SpotifyComponent = () => {
 	const mood = useSelector(selectCurrentMood);
+	console.warn({ mood });
 	const { url: currentMoodUrl } = spotifyContent.moods[mood];
 
 	return (
