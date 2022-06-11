@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: messagebox-ingress-service
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /hi-zone-app(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                  name: hi-zone-fe-srv
+                  port:
+                    number: 80
+---
