@@ -101,7 +101,7 @@ if (currentTask == 'dev') {
 		  },
 		},
     hot: true,
-    port: 3000,
+    port: 80,
     host: '0.0.0.0',
     client: {
       logging: 'error',
@@ -133,6 +133,7 @@ if (currentTask == 'build' || currentTask === 'develop-build') {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/hi-zone-app/',
   };
   config.mode = 'production';
   config.optimization = {

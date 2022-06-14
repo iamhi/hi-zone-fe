@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hi-zone-fe
-          image: registry.localhost.com/hi-zone-fe
+          image: localhost:5000/hi-zone-fe
 ---
 apiVersion: v1
 kind: Service
