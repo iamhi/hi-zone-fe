@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: hi-zone-fe-ingress-service
   annotations:
-    nginx.ingress.kubernetes.io/enable-cors: "true"
+    kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
