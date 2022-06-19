@@ -9,6 +9,7 @@ const webpack = require('webpack');
 const fse = require('fs-extra');
 const fs = require('fs');
 const fetch = require('node-fetch');
+const Dotenv = require('dotenv-webpack');
 const externalContentConfig = require('./externalcontent.config.js');
 
 const PACKAGE_PATHS = {
@@ -65,7 +66,9 @@ let config = {
     extensions: ['.js', '.json', '.jsx', '.ts', '.tsx', '.css'],
   },
   entry: './src/index.jsx',
-  plugins: [],
+  plugins: [
+    new Dotenv(),
+	],
   module: {
     rules: [
       cssConfig,
@@ -101,7 +104,7 @@ if (currentTask == 'dev') {
 		  },
 		},
     hot: true,
-    port: 80,
+    port: 3000,
     host: '0.0.0.0',
     client: {
       logging: 'error',
