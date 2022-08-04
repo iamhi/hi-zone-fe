@@ -1,4 +1,4 @@
-# build environment
+# buil environment
 FROM node:latest as build
 WORKDIR /app
 COPY . .

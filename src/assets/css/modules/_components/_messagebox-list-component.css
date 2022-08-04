@@ -1,0 +1,19 @@
+.messagebox-list-component {
+	margin-top: 1em;
+	overflow-y: auto;
+	height: 30em;
+}
+
+.messagebox-list-item-component {
+    border: 1px solid $appBlue;
+    border-radius: 0.5em;
+    border-color: var(--primary-color-3);
+	background-color: var(--background-color);
+	padding: 0.5em;
+	margin-bottom: 1em;
+	color: var(--primary-color-1);
+
+	&__content {
+      color: var(--primary-color-2);
+	}
+}
