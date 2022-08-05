@@ -17,6 +17,8 @@ const MessageboxPostComponent = ({
 		const requestData = Object.fromEntries(formData);
 
 		postMessageAction(requestData);
+
+		event.target.reset();
 	};
 
 	return (
