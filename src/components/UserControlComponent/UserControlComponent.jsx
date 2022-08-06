@@ -7,9 +7,9 @@ const UserControlComponent = () => {
 	const dispatch = useDispatch();
 
 	refreshTokenRequest()
-		.then(() => userLoginRequest())
-		.then((data) => console.warn(data) || dispatch(setUserData(data)))
-		.catch((err) => console.error(err));
+		.then(() => userLoginRequest()
+			.then((data) => console.warn(data) || dispatch(setUserData(data)))
+			.catch((err) => console.error(err)));
 
 	return null;
 };
