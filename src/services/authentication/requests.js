@@ -8,4 +8,4 @@ export const userLoginRequest = () => fetch(Urls.meUrl, {
 export const refreshTokenRequest = () => fetch(Urls.refreshTokenUrl, {
 	method: 'POST',
 	credentials: 'include',
-}).then((response) => response.json());
+});
