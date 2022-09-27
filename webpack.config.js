@@ -135,8 +135,7 @@ if (currentTask == 'build' || currentTask === 'develop-build') {
   config.output = {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/hi-zone-app/',
+    path: path.resolve(__dirname, 'dist')
   };
   config.mode = 'production';
   config.optimization = {
